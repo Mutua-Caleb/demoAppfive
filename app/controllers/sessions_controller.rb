@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       flash.now[:danger] = 'Invalid email/password combination' # flash now makes sure the flash message is only rendered in the current page and not on any other page
-      #create an error message
       render 'new'
     end
   end
